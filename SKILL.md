@@ -5,7 +5,9 @@ description: Make a 30-65 s vertical story Short in the "egg-head" style (flat w
 
 # Egg-head story Short (three.js + Canvas 2D, frame capture)
 
-Sample: `stories/is-odasi/` (38.8 s, Turkish, Mimar Sinan's soot room, AI Studio voice trimmed and sped up ×1.3). The finished video is `ornek/is-odasi.mp4`.
+Samples:
+- `stories/is-odasi/` (38.8 s, Turkish, Mimar Sinan's soot room, AI Studio voice trimmed and sped up ×1.3). The finished video is `ornek/is-odasi.mp4`.
+- `stories/golden-key/` (56 s, English, a fictional plot-twist story in a sunny American yard; ElevenLabs voice "Liam", word times from the API, `SCORE = 'folk'`). Copy it for an English story, a daylight set, a crowd, or seasons changing.
 
 Measured style targets: `STIL_KITABI.md` (summary) and `analiz/` (seven reports, raw numbers in `analiz/veri/`). Annotated reference frames: `referans/`. Read the style book before writing anything.
 
@@ -45,6 +47,13 @@ Measured style targets: `STIL_KITABI.md` (summary) and `analiz/` (seven reports,
    Then:
    - `python tools/kelime_saat.py voice.wav script.txt words.json`, which keeps the script's spelling and takes the times from Whisper.
    - `python tools/zarf.py voice.wav env.json`, the lip-flap envelope.
+
+   **ElevenLabs instead of a recorded take (English stories, or no voice file):**
+   - Key: on a cloud session, save it as a network secret for `api.elevenlabs.io` (header `xi-api-key`); the proxy injects it, so the scripts send a placeholder. Locally, set `ELEVENLABS_API_KEY`. The key needs Text to Speech; Voices Read lets you search voices.
+   - Default narrator: **Liam** (`TX3LPaxmHKxFdv7VOQHJ`, premade, young American, energetic). It was matched by pitch, intonation range and brightness to the "Dylan" narrator used on Higgsfield (146 Hz / 0.30 / 2250 against Liam's 138 Hz / 0.28 / 2140). Higgsfield's Dylan is not any of the ElevenLabs library voices called Dylan.
+   - `python tools/eleven_tts.py stories/<name>/voice/script.txt TX3LPaxmHKxFdv7VOQHJ stories/<name>/voice` writes `voice.wav` and `words.json` from the API's own character alignment. No Whisper (useful where Hugging Face is blocked).
+   - The raw take is slow (about 2.7 words/s with ~1 s sentence gaps). Then `mv voice.wav raw.wav; mv words.json raw_words.json` and `python tools/bosluk_kes.py raw.wav raw_words.json voice.wav 1.06 words.json`: the 5th argument carries the word times through the cuts and the tempo, so no second alignment pass is needed. Target 3.6-3.8 words/s in English (The Golden Key: 76.5 s -> 59.2 s -> ×1.06 = 55.8 s, 3.69 words/s).
+   - Then `python tools/zarf.py voice.wav env.json` as usual.
 5. **Story file** (`stories/<name>/story.js`, copy the sample). It exports `NAME`, `FPS`, `DUR`, `CUES`, `setup(ctx)`, `frame(t, ctx)`.
    - **Sets:** far apart in x (0, 200, 300 …). `frame()` shows only the set the camera is in.
    - **Cast:** `new Toon(look, scene)`. Each frame: `place(x,y,z,cam,tint,scale,pitch)` and `draw({ mouth: flap(env,t), blink: blinkAt(t, seed, swaps), expr, look, lookY, armL, armR, propL, propR, lean, bob, laughMarks, sweat, soot, lit, shade, rim })`. Talking characters only during their quoted line.
@@ -116,6 +125,8 @@ Measured style targets: `STIL_KITABI.md` (summary) and `analiz/` (seven reports,
    - Effects sit about 11 dB under the voice.
    - Loudnorm to -14 LUFS, TP -2.3.
 9. **Final.** `node render.mjs <story>` writes `out/<name>.mp4` (1080×1920, crf 16, AAC 256k).
+   - Score: `export const SCORE = 'folk'` in `story.js` gives a light G-major tune (a sunny comedy); the default is the Hicaz score.
+   - Without a GPU (a cloud container) Chrome renders WebGL in software: about 1.75 s per frame at `--scale=0.5`, so a 56 s draft takes ~25 min and the final ~1.5 h. Render parts in parallel with `--from/--to --name=partA` and join them with ffmpeg's concat demuxer, or render the final on a machine with a GPU (minutes).
 
 ## Gotchas (all hit while making İs Odası)
 
@@ -140,3 +151,13 @@ Measured style targets: `STIL_KITABI.md` (summary) and `analiz/` (seven reports,
 - **Painted lines grow with the surface.** A 9 px line on a dome texture is 20 px on screen when the dome is near. Keep painted lines at 3 to 5 px ON SCREEN at working distance: draw the texture larger rather than the line thicker.
 - **Camera inside the smoke.** Where all wisps converge, a camera in the stream sees only haze. Shoot the target from the side.
 - **Low windows show only sky.** A window at eye level sees the panorama from 0° up. `nightCityTex` raises its far shore to 4.6° so water and skyline fit in the opening.
+
+## Gotchas (hit while making The Golden Key)
+
+- **Word lookups match the FIRST occurrence.** `W('see,')` found "to see the ground" before "You see", and the camera jumped to the explainer set 7 s early. For every pinned word, check that it is unique or pass `n`; English repeats small words (the, see, his, next, another, nobody).
+- **Alpha-cut cards under override materials.** Weed tufts are crossed planes with an alpha-tested texture. The normal pass and the characters' depth-only pass use override materials that ignore `alphaTest`, so each tuft became a full rectangle: square ink lines in the grass and characters cut off by an invisible quad. Push such meshes to `scene.userData.alphaCut` (post.js leaves them out of the normal pass and draws them into the depth pass with their own alpha-tested depth material).
+- **An InstancedMesh instance never set stands at the origin.** Spreading `n` items over three meshes with `ceil(n / 3)` slots left one slot unset: an identity matrix, a full-size tuft in the middle of the yard after every other weed was gone. Set `mesh.count` to the number really used.
+- **Tall foreground props hide faces.** Weeds taller than about 0.6 of a character hide the face at eye-level cameras. Keep them low where people stand (`CLEAR` spots in the sample) and fade out anything within 1.5 m of a low camera, or it fills the lens as a dark blob.
+- **Extrude/Shape UVs are in metres.** A shingle texture with `repeat [6, 2]` on an extruded roof repeats six times per METRE and averages out to a flat colour. Use about `1 / tile size in metres`.
+- **Seasons and states change inside whips.** The yard goes overgrown -> dug -> flat soil -> pumpkins -> sprouts, and the light day -> time-lapse -> morning -> autumn -> spring; each swap sits in the middle of a whip, where the motion blur hides it. A swap during a glide shows.
+- **Stat cards and pop-ups.** `export function overlay(g, t, ctx)` draws screen-space cards ($10,000, SATURDAY, A FORTUNE, FREE, AUTUMN) at 20 % height, above the captions at 70 %, with a back-out pop. A "!" or "?" over a head projects a world point with `cam`.
