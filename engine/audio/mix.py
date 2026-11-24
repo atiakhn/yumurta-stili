@@ -45,7 +45,34 @@ def pad(freq, dur, amp=.08):                     # soft drone: detuned saws, low
     x = band(x, 40, 900) * amp
     fade = np.minimum(1, np.minimum(t / .8, (dur - t) / .8)); return x * fade
 
-# ------------------------------------------------------------------ score (Hicaz on D, 100 bpm)
+# ------------------------------------------------------------------ score
+# A story picks its score with `export const SCORE = '...'` (written to cues.json by render.mjs).
+#   'hicaz' (default)  Hicaz on D, 100 bpm, oud-like plucks and a frame drum (İs Odası)
+#   'folk'             a light G-major tune, 112 bpm: plucked melody, boom-chick bass, brushed snare (a sunny comedy)
+SCORE = cues.get('score', 'hicaz')
+def folk_score():
+    F = {'G2': 98.0, 'D3': 146.8, 'C3': 130.8, 'E3': 164.8, 'G3': 196.0, 'B3': 246.9, 'C4': 261.6, 'D4': 293.7, 'E4': 329.6,
+         'G4': 392.0, 'A4': 440.0, 'B4': 493.9, 'C5': 523.3, 'D5': 587.3, 'E5': 659.3}
+    mus = np.zeros(N); bt = 60 / 112
+    wh = sorted(c['t'] for c in cues['cues'] if c['type'] == 'whoosh')
+    t_ex, t_back, t_aut = (wh + [DUR * .55, DUR * .7, DUR * .85])[:3]
+    tune = ['G4', 'B4', 'D5', 'B4', 'E5', 'D5', 'B4', 'A4', 'G4', 'A4', 'B4', 'D5', 'C5', 'B4', 'A4', 'G4']
+    chords = [('G2', 'D3'), ('C3', 'G3'), ('D3', 'A4'), ('G2', 'D3')]
+    t = 0.0; k = 0
+    while t < DUR - .6:
+        b = int(round(t / bt)); sec = 'yard' if t < t_ex else 'farm' if t < t_back else 'yard2' if t < t_aut else 'autumn'
+        bar = (b // 4) % 4; root, fifth = chords[bar]
+        if b % 2 == 0: put(mus, t, pluck(F[root], .5, .4), .45)
+        else: put(mus, t, pluck(F[fifth], .35, .5), .25)
+        if sec != 'farm' and b % 2 == 0: put(mus, t, pluck(F[tune[k % len(tune)]], .7, .75), .3 if sec != 'autumn' else .24); k += 1
+        if sec == 'farm' and b % 4 == 0: put(mus, t, pluck(F['E4' if bar % 2 else 'D4'], .9, .6), .26)
+        if b % 2 == 1: put(mus, t, drum('tek'), .22)
+        if sec == 'yard2' and b % 4 == 3: put(mus, t + bt / 2, pluck(F['D5'], .3, .9), .14)
+        t += bt
+    put(mus, t_aut, pad(F['G2'], DUR - t_aut, .06))
+    for f in ('G3', 'B3', 'D4', 'G4'): put(mus, DUR - 1.4, pluck(F[f], 1.4, .4), .3)
+    return mus
+# Hicaz on D, 100 bpm
 HZ = {'D3': 146.8, 'Eb3': 155.6, 'F#3': 185.0, 'G3': 196.0, 'A3': 220.0, 'Bb3': 233.1, 'C4': 261.6, 'D4': 293.7, 'Eb4': 311.1, 'F#4': 370.0, 'A2': 110.0, 'D2': 73.4}
 music = np.zeros(N)
 beat = 60 / 100
@@ -70,6 +97,8 @@ put(music, t_soot, pad(HZ['A2'] * .5, t_call - t_soot + .3, .1))
 put(music, t_call, pad(HZ['D3'], DUR - t_call, .06))
 # final resolve chord
 for f in ('D3', 'A3', 'D4', 'F#4'): put(music, DUR - 1.4, pluck(HZ[f], 1.4, .3), .3)
+
+if SCORE == 'folk': music = folk_score()
 
 # ------------------------------------------------------------------ effects
 sfx = np.zeros(N)

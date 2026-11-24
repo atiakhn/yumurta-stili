@@ -1,5 +1,6 @@
 # bosluk_kes.py — shorten the pauses in a voice take, then (optionally) speed it up.
-#   python bosluk_kes.py <in.wav> <words.json> <out.wav> [tempo=1.0]
+#   python bosluk_kes.py <in.wav> <words.json> <out.wav> [tempo=1.0] [out_words.json]
+# With out_words.json, the word times are carried through the cuts and the tempo (no second Whisper pass).
 # words.json = kelime_saat.py output for <in.wav>; it tells which pause follows a sentence end, a comma or nothing.
 # Pause targets (before tempo): sentence end .22 s, comma .14 s, inside a phrase .09 s. Lead-in .03 s.
 import sys, json, subprocess
@@ -7,6 +8,7 @@ import numpy as np
 
 src, wj, dst = sys.argv[1], sys.argv[2], sys.argv[3]
 tempo = float(sys.argv[4]) if len(sys.argv) > 4 else 1.0
+wout = sys.argv[5] if len(sys.argv) > 5 else None
 SR = 24000
 y = np.frombuffer(subprocess.run(['ffmpeg', '-v', 'error', '-i', src, '-ac', '1', '-ar', str(SR), '-f', 'f32le', '-'],
                                  capture_output=True, check=True).stdout, np.float32).copy()
@@ -59,3 +61,19 @@ af = ['-af', f'atempo={tempo}'] if tempo != 1.0 else []
 subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f32le', '-ar', str(SR), '-ac', '1', '-i', '-', *af,
                 '-c:a', 'pcm_s16le', dst], input=out.astype(np.float32).tobytes(), check=True)
 print('tempo x%.2f -> %.2fs' % (tempo, len(out) / SR / tempo))
+if wout:
+    # map an input time to the output: walk the kept segments (each join after the first loses xf samples)
+    segs, o = [], 0
+    for n, (a, b) in enumerate(keep):
+        if n: o -= xf
+        segs.append((a, b, o)); o += b - a
+    def tmap(t):
+        x = t * SR
+        for a, b, o in segs:
+            if x < a: return o / SR / tempo          # inside a removed stretch: snap to the join
+            if x <= b: return (o + x - a) / SR / tempo
+        return o / SR / tempo
+    nw = [{**w, 'start': round(tmap(w['start']), 3), 'end': round(tmap(w['end']), 3)} for w in words]
+    d = len(out) / SR / tempo
+    json.dump({'words': nw, 'duration': round(d, 3)}, open(wout, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    print('words -> %s  (%.2f words/s)' % (wout, len(nw) / d))

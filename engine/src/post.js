@@ -188,12 +188,24 @@ export class Post {
     r.setRenderTarget(this.rtWorld); r.clear(); r.render(scene, cam);
     so.forEach(o => { o.visible = false; });
     const bg = scene.background; scene.background = null; const fog = scene.fog; scene.fog = null;
+    // Meshes whose texture alpha cuts their shape (weed tufts, leaves: scene.userData.alphaCut) would show as full quads
+    // under an override material. They are left out of the normal pass (the ink still finds their outline in the depth)
+    // and drawn into the depth-only pass with their own alpha-tested depth material, so they hide a character only where
+    // they are really drawn.
+    const cut = (scene.userData.alphaCut || []).filter(o => o.visible);
+    cut.forEach(o => { o.visible = false; });
     scene.overrideMaterial = this.normalMat;
     r.setRenderTarget(this.rtNormal); r.setClearColor(0x8080ff, 1); r.clear(); r.render(scene, cam);
     // characters: depth of the world first (no colour), then layer 1 on a transparent target
     scene.overrideMaterial = this.depthOnly;
     r.setRenderTarget(this.rtChars); r.setClearColor(0x000000, 0); r.clear(); r.render(scene, cam);
     scene.overrideMaterial = null; scene.fog = fog;
+    if (cut.length) {
+      const mats = cut.map(o => o.material);
+      cut.forEach(o => { o.visible = true; o.layers.enable(2); o.material = o.userData.depthCut ||= new THREE.MeshBasicMaterial({ map: o.material.map, alphaTest: o.material.alphaTest || .5, side: o.material.side, colorWrite: false }); });
+      cam.layers.set(2); r.autoClear = false; r.render(scene, cam); r.autoClear = true; cam.layers.set(0);
+      cut.forEach((o, i) => { o.material = mats[i]; o.layers.disable(2); });
+    }
     cam.layers.set(1); r.autoClear = false; r.render(scene, cam); r.autoClear = true; cam.layers.set(0);
     scene.background = bg; r.setClearColor(0x000000, 1);
     so.forEach((o, i) => { o.visible = was[i]; });

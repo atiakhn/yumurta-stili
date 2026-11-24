@@ -27,7 +27,7 @@ await page.goto(`http://127.0.0.1:${port}/engine/index.html?story=${story}&captu
 await page.waitForFunction(() => window.__ready, { timeout: 120000 });
 const meta = await page.evaluate(() => window.__meta);
 fs.mkdirSync(path.join(SD, 'audio'), { recursive: true });
-fs.writeFileSync(path.join(SD, 'audio', 'cues.json'), JSON.stringify({ DUR: meta.DUR, cues: meta.CUES }, null, 1));
+fs.writeFileSync(path.join(SD, 'audio', 'cues.json'), JSON.stringify({ DUR: meta.DUR, score: meta.SCORE, cues: meta.CUES }, null, 1));
 if (args.cues) { console.log('cues written'); await browser.close(); server.close(); process.exit(0); }
 const grab = async t => {
   const url = await page.evaluate(t => { window.render(t); return document.getElementById('out').toDataURL('image/png'); }, t);

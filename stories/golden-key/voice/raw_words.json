@@ -1,0 +1,1035 @@
+{
+ "words": [
+  {
+   "word": "He",
+   "start": 0.058,
+   "end": 0.139
+  },
+  {
+   "word": "told",
+   "start": 0.209,
+   "end": 0.395
+  },
+  {
+   "word": "the",
+   "start": 0.418,
+   "end": 0.488
+  },
+  {
+   "word": "whole",
+   "start": 0.546,
+   "end": 0.743
+  },
+  {
+   "word": "town",
+   "start": 0.778,
+   "end": 1.01
+  },
+  {
+   "word": "he",
+   "start": 1.057,
+   "end": 1.103
+  },
+  {
+   "word": "buried",
+   "start": 1.173,
+   "end": 1.44
+  },
+  {
+   "word": "ten",
+   "start": 1.474,
+   "end": 1.683
+  },
+  {
+   "word": "thousand",
+   "start": 1.753,
+   "end": 2.101
+  },
+  {
+   "word": "dollars",
+   "start": 2.159,
+   "end": 2.45
+  },
+  {
+   "word": "in",
+   "start": 2.496,
+   "end": 2.554
+  },
+  {
+   "word": "his",
+   "start": 2.577,
+   "end": 2.659
+  },
+  {
+   "word": "backyard.",
+   "start": 2.705,
+   "end": 3.239
+  },
+  {
+   "word": "Well,",
+   "start": 4.203,
+   "end": 4.47
+  },
+  {
+   "word": "a",
+   "start": 4.586,
+   "end": 4.656
+  },
+  {
+   "word": "golden",
+   "start": 4.748,
+   "end": 5.039
+  },
+  {
+   "word": "key",
+   "start": 5.085,
+   "end": 5.224
+  },
+  {
+   "word": "worth",
+   "start": 5.271,
+   "end": 5.468
+  },
+  {
+   "word": "ten",
+   "start": 5.515,
+   "end": 5.677
+  },
+  {
+   "word": "thousand",
+   "start": 5.747,
+   "end": 6.072
+  },
+  {
+   "word": "dollars.",
+   "start": 6.118,
+   "end": 6.502
+  },
+  {
+   "word": "His",
+   "start": 7.279,
+   "end": 7.43
+  },
+  {
+   "word": "backyard",
+   "start": 7.5,
+   "end": 7.941
+  },
+  {
+   "word": "is",
+   "start": 7.988,
+   "end": 8.057
+  },
+  {
+   "word": "a",
+   "start": 8.092,
+   "end": 8.127
+  },
+  {
+   "word": "jungle",
+   "start": 8.197,
+   "end": 8.557
+  },
+  {
+   "word": "of",
+   "start": 8.603,
+   "end": 8.661
+  },
+  {
+   "word": "weeds,",
+   "start": 8.777,
+   "end": 9.195
+  },
+  {
+   "word": "rocks",
+   "start": 9.543,
+   "end": 9.88
+  },
+  {
+   "word": "and",
+   "start": 9.927,
+   "end": 10.008
+  },
+  {
+   "word": "old",
+   "start": 10.089,
+   "end": 10.286
+  },
+  {
+   "word": "tree",
+   "start": 10.333,
+   "end": 10.53
+  },
+  {
+   "word": "stumps.",
+   "start": 10.565,
+   "end": 10.913
+  },
+  {
+   "word": "His",
+   "start": 11.9,
+   "end": 12.051
+  },
+  {
+   "word": "wife",
+   "start": 12.132,
+   "end": 12.376
+  },
+  {
+   "word": "sighs.",
+   "start": 12.423,
+   "end": 12.864
+  },
+  {
+   "word": "\"Nobody",
+   "start": 13.886,
+   "end": 14.199
+  },
+  {
+   "word": "will",
+   "start": 14.234,
+   "end": 14.373
+  },
+  {
+   "word": "ever",
+   "start": 14.42,
+   "end": 14.571
+  },
+  {
+   "word": "find",
+   "start": 14.629,
+   "end": 14.826
+  },
+  {
+   "word": "anything",
+   "start": 14.872,
+   "end": 15.186
+  },
+  {
+   "word": "in",
+   "start": 15.232,
+   "end": 15.29
+  },
+  {
+   "word": "there.\"",
+   "start": 15.337,
+   "end": 15.604
+  },
+  {
+   "word": "He",
+   "start": 16.428,
+   "end": 16.533
+  },
+  {
+   "word": "puts",
+   "start": 16.591,
+   "end": 16.777
+  },
+  {
+   "word": "up",
+   "start": 16.811,
+   "end": 16.881
+  },
+  {
+   "word": "a",
+   "start": 16.927,
+   "end": 16.951
+  },
+  {
+   "word": "sign.",
+   "start": 17.009,
+   "end": 17.345
+  },
+  {
+   "word": "\"Dig",
+   "start": 18.274,
+   "end": 18.53
+  },
+  {
+   "word": "for",
+   "start": 18.588,
+   "end": 18.669
+  },
+  {
+   "word": "the",
+   "start": 18.704,
+   "end": 18.773
+  },
+  {
+   "word": "golden",
+   "start": 18.832,
+   "end": 19.133
+  },
+  {
+   "word": "key.",
+   "start": 19.191,
+   "end": 19.517
+  },
+  {
+   "word": "Five",
+   "start": 19.865,
+   "end": 20.143
+  },
+  {
+   "word": "dollars",
+   "start": 20.167,
+   "end": 20.434
+  },
+  {
+   "word": "a",
+   "start": 20.48,
+   "end": 20.503
+  },
+  {
+   "word": "day.\"",
+   "start": 20.55,
+   "end": 20.782
+  },
+  {
+   "word": "By",
+   "start": 22.222,
+   "end": 22.396
+  },
+  {
+   "word": "Saturday,",
+   "start": 22.489,
+   "end": 22.907
+  },
+  {
+   "word": "the",
+   "start": 22.965,
+   "end": 23.034
+  },
+  {
+   "word": "line",
+   "start": 23.092,
+   "end": 23.325
+  },
+  {
+   "word": "goes",
+   "start": 23.359,
+   "end": 23.557
+  },
+  {
+   "word": "around",
+   "start": 23.603,
+   "end": 23.801
+  },
+  {
+   "word": "the",
+   "start": 23.835,
+   "end": 23.905
+  },
+  {
+   "word": "block.",
+   "start": 23.928,
+   "end": 24.253
+  },
+  {
+   "word": "Families",
+   "start": 24.845,
+   "end": 25.24
+  },
+  {
+   "word": "bring",
+   "start": 25.275,
+   "end": 25.449
+  },
+  {
+   "word": "shovels.",
+   "start": 25.507,
+   "end": 25.937
+  },
+  {
+   "word": "Kids",
+   "start": 26.424,
+   "end": 26.691
+  },
+  {
+   "word": "bring",
+   "start": 26.715,
+   "end": 26.866
+  },
+  {
+   "word": "buckets.",
+   "start": 26.924,
+   "end": 27.318
+  },
+  {
+   "word": "A",
+   "start": 27.818,
+   "end": 27.887
+  },
+  {
+   "word": "man",
+   "start": 27.957,
+   "end": 28.143
+  },
+  {
+   "word": "shows",
+   "start": 28.201,
+   "end": 28.456
+  },
+  {
+   "word": "up",
+   "start": 28.514,
+   "end": 28.596
+  },
+  {
+   "word": "with",
+   "start": 28.642,
+   "end": 28.746
+  },
+  {
+   "word": "a",
+   "start": 28.793,
+   "end": 28.816
+  },
+  {
+   "word": "metal",
+   "start": 28.874,
+   "end": 29.072
+  },
+  {
+   "word": "detector.",
+   "start": 29.118,
+   "end": 29.559
+  },
+  {
+   "word": "Another",
+   "start": 30.291,
+   "end": 30.581
+  },
+  {
+   "word": "guy",
+   "start": 30.639,
+   "end": 30.778
+  },
+  {
+   "word": "rents",
+   "start": 30.859,
+   "end": 31.068
+  },
+  {
+   "word": "a",
+   "start": 31.103,
+   "end": 31.138
+  },
+  {
+   "word": "tiny",
+   "start": 31.185,
+   "end": 31.452
+  },
+  {
+   "word": "digger.",
+   "start": 31.51,
+   "end": 31.812
+  },
+  {
+   "word": "People",
+   "start": 32.59,
+   "end": 32.868
+  },
+  {
+   "word": "pull",
+   "start": 32.903,
+   "end": 33.054
+  },
+  {
+   "word": "out",
+   "start": 33.112,
+   "end": 33.205
+  },
+  {
+   "word": "the",
+   "start": 33.24,
+   "end": 33.31
+  },
+  {
+   "word": "weeds",
+   "start": 33.356,
+   "end": 33.646
+  },
+  {
+   "word": "to",
+   "start": 33.681,
+   "end": 33.739
+  },
+  {
+   "word": "see",
+   "start": 33.797,
+   "end": 33.913
+  },
+  {
+   "word": "the",
+   "start": 33.948,
+   "end": 34.018
+  },
+  {
+   "word": "ground",
+   "start": 34.053,
+   "end": 34.308
+  },
+  {
+   "word": "better.",
+   "start": 34.355,
+   "end": 34.61
+  },
+  {
+   "word": "They",
+   "start": 35.167,
+   "end": 35.318
+  },
+  {
+   "word": "roll",
+   "start": 35.376,
+   "end": 35.539
+  },
+  {
+   "word": "away",
+   "start": 35.585,
+   "end": 35.725
+  },
+  {
+   "word": "the",
+   "start": 35.759,
+   "end": 35.829
+  },
+  {
+   "word": "rocks",
+   "start": 35.887,
+   "end": 36.235
+  },
+  {
+   "word": "and",
+   "start": 36.27,
+   "end": 36.363
+  },
+  {
+   "word": "rip",
+   "start": 36.433,
+   "end": 36.595
+  },
+  {
+   "word": "out",
+   "start": 36.642,
+   "end": 36.746
+  },
+  {
+   "word": "the",
+   "start": 36.781,
+   "end": 36.851
+  },
+  {
+   "word": "stumps.",
+   "start": 36.897,
+   "end": 37.315
+  },
+  {
+   "word": "Weeks",
+   "start": 38.186,
+   "end": 38.499
+  },
+  {
+   "word": "go",
+   "start": 38.546,
+   "end": 38.65
+  },
+  {
+   "word": "by.",
+   "start": 38.72,
+   "end": 38.987
+  },
+  {
+   "word": "Nobody",
+   "start": 39.324,
+   "end": 39.637
+  },
+  {
+   "word": "finds",
+   "start": 39.695,
+   "end": 39.939
+  },
+  {
+   "word": "the",
+   "start": 39.974,
+   "end": 40.043
+  },
+  {
+   "word": "key.",
+   "start": 40.078,
+   "end": 40.38
+  },
+  {
+   "word": "And",
+   "start": 40.856,
+   "end": 40.995
+  },
+  {
+   "word": "every",
+   "start": 41.053,
+   "end": 41.216
+  },
+  {
+   "word": "morning,",
+   "start": 41.262,
+   "end": 41.553
+  },
+  {
+   "word": "they",
+   "start": 41.727,
+   "end": 41.878
+  },
+  {
+   "word": "pay",
+   "start": 41.936,
+   "end": 42.098
+  },
+  {
+   "word": "again.",
+   "start": 42.145,
+   "end": 42.482
+  },
+  {
+   "word": "You",
+   "start": 43.259,
+   "end": 43.375
+  },
+  {
+   "word": "see,",
+   "start": 43.434,
+   "end": 43.701
+  },
+  {
+   "word": "clearing",
+   "start": 43.921,
+   "end": 44.246
+  },
+  {
+   "word": "land",
+   "start": 44.304,
+   "end": 44.49
+  },
+  {
+   "word": "like",
+   "start": 44.536,
+   "end": 44.676
+  },
+  {
+   "word": "that",
+   "start": 44.699,
+   "end": 44.827
+  },
+  {
+   "word": "costs",
+   "start": 44.885,
+   "end": 45.152
+  },
+  {
+   "word": "a",
+   "start": 45.187,
+   "end": 45.21
+  },
+  {
+   "word": "fortune.",
+   "start": 45.268,
+   "end": 45.744
+  },
+  {
+   "word": "Farmers",
+   "start": 46.255,
+   "end": 46.603
+  },
+  {
+   "word": "pay",
+   "start": 46.65,
+   "end": 46.789
+  },
+  {
+   "word": "whole",
+   "start": 46.835,
+   "end": 47.044
+  },
+  {
+   "word": "crews",
+   "start": 47.079,
+   "end": 47.381
+  },
+  {
+   "word": "to",
+   "start": 47.427,
+   "end": 47.485
+  },
+  {
+   "word": "dig",
+   "start": 47.567,
+   "end": 47.718
+  },
+  {
+   "word": "out",
+   "start": 47.764,
+   "end": 47.88
+  },
+  {
+   "word": "rocks,",
+   "start": 47.962,
+   "end": 48.356
+  },
+  {
+   "word": "pull",
+   "start": 48.588,
+   "end": 48.797
+  },
+  {
+   "word": "weeds",
+   "start": 48.867,
+   "end": 49.204
+  },
+  {
+   "word": "and",
+   "start": 49.413,
+   "end": 49.622
+  },
+  {
+   "word": "turn",
+   "start": 49.668,
+   "end": 49.842
+  },
+  {
+   "word": "the",
+   "start": 49.889,
+   "end": 49.958
+  },
+  {
+   "word": "soil.",
+   "start": 49.993,
+   "end": 50.307
+  },
+  {
+   "word": "He",
+   "start": 50.968,
+   "end": 51.073
+  },
+  {
+   "word": "got",
+   "start": 51.131,
+   "end": 51.259
+  },
+  {
+   "word": "all",
+   "start": 51.305,
+   "end": 51.421
+  },
+  {
+   "word": "of",
+   "start": 51.468,
+   "end": 51.514
+  },
+  {
+   "word": "it",
+   "start": 51.561,
+   "end": 51.619
+  },
+  {
+   "word": "done",
+   "start": 51.665,
+   "end": 51.828
+  },
+  {
+   "word": "for",
+   "start": 51.862,
+   "end": 51.967
+  },
+  {
+   "word": "free.",
+   "start": 52.037,
+   "end": 52.397
+  },
+  {
+   "word": "And",
+   "start": 52.989,
+   "end": 53.128
+  },
+  {
+   "word": "the",
+   "start": 53.174,
+   "end": 53.244
+  },
+  {
+   "word": "crew",
+   "start": 53.29,
+   "end": 53.476
+  },
+  {
+   "word": "paid",
+   "start": 53.546,
+   "end": 53.755
+  },
+  {
+   "word": "him.",
+   "start": 53.801,
+   "end": 53.964
+  },
+  {
+   "word": "When",
+   "start": 55.229,
+   "end": 55.404
+  },
+  {
+   "word": "the",
+   "start": 55.438,
+   "end": 55.508
+  },
+  {
+   "word": "last",
+   "start": 55.566,
+   "end": 55.845
+  },
+  {
+   "word": "digger",
+   "start": 55.914,
+   "end": 56.158
+  },
+  {
+   "word": "gives",
+   "start": 56.216,
+   "end": 56.448
+  },
+  {
+   "word": "up,",
+   "start": 56.53,
+   "end": 56.669
+  },
+  {
+   "word": "the",
+   "start": 56.994,
+   "end": 57.099
+  },
+  {
+   "word": "yard",
+   "start": 57.145,
+   "end": 57.354
+  },
+  {
+   "word": "is",
+   "start": 57.4,
+   "end": 57.482
+  },
+  {
+   "word": "soft,",
+   "start": 57.551,
+   "end": 58.004
+  },
+  {
+   "word": "flat,",
+   "start": 58.294,
+   "end": 58.689
+  },
+  {
+   "word": "dark",
+   "start": 58.956,
+   "end": 59.246
+  },
+  {
+   "word": "soil.",
+   "start": 59.316,
+   "end": 59.676
+  },
+  {
+   "word": "He",
+   "start": 60.21,
+   "end": 60.338
+  },
+  {
+   "word": "plants",
+   "start": 60.407,
+   "end": 60.709
+  },
+  {
+   "word": "one",
+   "start": 60.779,
+   "end": 61.011
+  },
+  {
+   "word": "bag",
+   "start": 61.058,
+   "end": 61.267
+  },
+  {
+   "word": "of",
+   "start": 61.313,
+   "end": 61.359
+  },
+  {
+   "word": "pumpkin",
+   "start": 61.429,
+   "end": 61.777
+  },
+  {
+   "word": "seeds.",
+   "start": 61.847,
+   "end": 62.184
+  },
+  {
+   "word": "By",
+   "start": 63.055,
+   "end": 63.229
+  },
+  {
+   "word": "autumn,",
+   "start": 63.322,
+   "end": 63.67
+  },
+  {
+   "word": "it's",
+   "start": 63.96,
+   "end": 64.134
+  },
+  {
+   "word": "the",
+   "start": 64.169,
+   "end": 64.239
+  },
+  {
+   "word": "biggest",
+   "start": 64.32,
+   "end": 64.622
+  },
+  {
+   "word": "pumpkin",
+   "start": 64.669,
+   "end": 65.005
+  },
+  {
+   "word": "patch",
+   "start": 65.052,
+   "end": 65.295
+  },
+  {
+   "word": "in",
+   "start": 65.33,
+   "end": 65.388
+  },
+  {
+   "word": "town.",
+   "start": 65.458,
+   "end": 65.783
+  },
+  {
+   "word": "And",
+   "start": 66.607,
+   "end": 66.735
+  },
+  {
+   "word": "who",
+   "start": 66.77,
+   "end": 66.874
+  },
+  {
+   "word": "buys",
+   "start": 66.932,
+   "end": 67.176
+  },
+  {
+   "word": "them?",
+   "start": 67.211,
+   "end": 67.374
+  },
+  {
+   "word": "The",
+   "start": 68.186,
+   "end": 68.326
+  },
+  {
+   "word": "same",
+   "start": 68.384,
+   "end": 68.628
+  },
+  {
+   "word": "diggers.",
+   "start": 68.674,
+   "end": 69.069
+  },
+  {
+   "word": "Next",
+   "start": 70.056,
+   "end": 70.288
+  },
+  {
+   "word": "spring,",
+   "start": 70.323,
+   "end": 70.636
+  },
+  {
+   "word": "he",
+   "start": 71.066,
+   "end": 71.147
+  },
+  {
+   "word": "loses",
+   "start": 71.228,
+   "end": 71.507
+  },
+  {
+   "word": "another",
+   "start": 71.553,
+   "end": 71.797
+  },
+  {
+   "word": "golden",
+   "start": 71.855,
+   "end": 72.122
+  },
+  {
+   "word": "key.",
+   "start": 72.18,
+   "end": 72.459
+  },
+  {
+   "word": "In",
+   "start": 73.306,
+   "end": 73.457
+  },
+  {
+   "word": "the",
+   "start": 73.504,
+   "end": 73.573
+  },
+  {
+   "word": "field",
+   "start": 73.631,
+   "end": 73.887
+  },
+  {
+   "word": "next",
+   "start": 73.98,
+   "end": 74.177
+  },
+  {
+   "word": "door.",
+   "start": 74.212,
+   "end": 74.491
+  },
+  {
+   "word": "He",
+   "start": 75.454,
+   "end": 75.559
+  },
+  {
+   "word": "just",
+   "start": 75.628,
+   "end": 75.791
+  },
+  {
+   "word": "bought",
+   "start": 75.837,
+   "end": 76.07
+  },
+  {
+   "word": "it.",
+   "start": 76.104,
+   "end": 76.244
+  }
+ ],
+ "duration": 76.533
+}

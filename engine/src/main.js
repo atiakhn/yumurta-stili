@@ -50,6 +50,6 @@ window.render = (t) => {
   if (!q.has('nocap') && look.captions !== false) drawCaption(g, groups, t, W, H);
   if (story.overlay) story.overlay(g, t, ctx);
 };
-window.__meta = { DUR: story.DUR, FPS: story.FPS || 30, NAME: story.NAME || STORY, W, H, CUES: story.CUES || [] };
+window.__meta = { DUR: story.DUR, FPS: story.FPS || 30, NAME: story.NAME || STORY, W, H, CUES: story.CUES || [], SCORE: story.SCORE || 'hicaz' };
 window.__ready = true;
 if (!q.has('capture')) { const t0 = performance.now(); const loop = () => { window.render(((performance.now() - t0) / 1000) % story.DUR); requestAnimationFrame(loop); }; loop(); }
