@@ -149,6 +149,30 @@ const PROPS = {
   pumpkin(g, x, y) { g.save(); g.translate(x, y + 30); g.strokeStyle = PLUM; g.lineWidth = 6; g.fillStyle = '#f08a2a';
     for (const [dx, rw] of [[-26, 34], [26, 34], [0, 36]]) { g.beginPath(); g.ellipse(dx, 0, rw, 46, 0, 0, 6.29); g.fill(); g.stroke(); }
     g.fillStyle = '#5a8a3a'; g.beginPath(); g.roundRect(-6, -60, 12, 20, 4); g.fill(); g.stroke(); g.restore(); },
+  // --- worst-diner story ---
+  bread(g, x, y, s) { g.save(); g.translate(x, y); g.rotate(-.3 * s); g.strokeStyle = PLUM; g.lineWidth = 6; g.fillStyle = '#d8a050';
+    g.beginPath(); g.ellipse(0, -10, 62, 34, 0, 0, 6.29); g.fill(); g.stroke(); g.strokeStyle = '#8a5a2a'; g.lineWidth = 4;
+    for (const k of [-30, 0, 30]) { g.beginPath(); g.moveTo(k - 10, -34); g.lineTo(k + 10, -4); g.stroke(); } g.restore(); },
+  slip(g, x, y, s) { g.save(); g.translate(x, y - 40); g.rotate(-.15 * s); g.strokeStyle = PLUM; g.lineWidth = 6; g.fillStyle = '#f6a8c0';
+    g.beginPath(); g.roundRect(-46, -60, 92, 120, 6); g.fill(); g.stroke(); g.strokeStyle = '#b8607a'; g.lineWidth = 4;
+    for (let k = 0; k < 4; k++) { g.beginPath(); g.moveTo(-30, -36 + k * 22); g.lineTo(k === 3 ? 0 : 30, -36 + k * 22); g.stroke(); } g.restore(); },
+  box(g, x, y, s) { g.save(); g.translate(x - s * 40, y - 30); g.strokeStyle = PLUM; g.lineWidth = 6;
+    g.fillStyle = '#e8a040'; g.beginPath(); g.moveTo(-30, -50); g.lineTo(-18, -110); g.lineTo(-6, -50); g.fill(); g.stroke();
+    g.fillStyle = '#3ab0a0'; g.beginPath(); g.roundRect(4, -80, 26, 34, 6); g.fill(); g.stroke();
+    g.fillStyle = '#c89a60'; g.beginPath(); g.roundRect(-64, -52, 128, 96, 6); g.fill(); g.stroke();
+    g.strokeStyle = '#8a6030'; g.lineWidth = 4; g.beginPath(); g.moveTo(-64, -30); g.lineTo(64, -30); g.stroke(); g.restore(); },
+  notebook(g, x, y, s) { g.save(); g.translate(x, y - 20); g.rotate(.15 * s); g.strokeStyle = PLUM; g.lineWidth = 6; g.fillStyle = '#f6f0dc';
+    g.beginPath(); g.roundRect(-40, -54, 80, 100, 6); g.fill(); g.stroke(); g.fillStyle = '#c8323a'; g.fillRect(-40, -54, 12, 100);
+    g.strokeStyle = '#8a8aa8'; g.lineWidth = 3; for (let k = 0; k < 5; k++) { g.beginPath(); g.moveTo(-20, -36 + k * 16); g.lineTo(30, -36 + k * 16); g.stroke(); }
+    g.strokeStyle = PLUM; g.lineWidth = 7; g.beginPath(); g.moveTo(40, 30); g.lineTo(70, -30); g.stroke(); g.restore(); },
+  bowl(g, x, y, s, p) { g.save(); g.translate(x + s * 20, y - 30); g.strokeStyle = PLUM; g.lineWidth = 6;
+    g.fillStyle = '#f2ead8'; g.beginPath(); g.ellipse(0, 0, 70, 16, 0, 0, 6.29); g.fill(); g.stroke();
+    g.fillStyle = p.hot ? '#f0a030' : '#9a9a8a'; g.beginPath(); g.ellipse(0, 0, 58, 11, 0, 0, 6.29); g.fill();
+    if (p.hot) { g.fillStyle = '#4aa848'; for (const k of [-20, 4, 22]) { g.beginPath(); g.ellipse(k, -2, 8, 4, k, 0, 6.29); g.fill(); } }
+    g.fillStyle = '#f2ead8'; g.beginPath(); g.moveTo(-70, 0); g.quadraticCurveTo(-60, 60, 0, 62); g.quadraticCurveTo(60, 60, 70, 0); g.closePath(); g.fill(); g.stroke();
+    g.restore(); },
+  spoonUp(g, x, y, s) { g.save(); g.translate(x, y); g.rotate(-.5 * s); g.strokeStyle = PLUM; g.lineWidth = 6; g.fillStyle = '#c8ccd8';
+    g.beginPath(); g.roundRect(-5, -10, 10, 80, 5); g.fill(); g.stroke(); g.beginPath(); g.ellipse(0, -30, 16, 22, 0, 0, 6.29); g.fill(); g.stroke(); g.restore(); },
 };
 
 // ---------- hats ----------
@@ -214,6 +238,21 @@ function hat(g, kind, w, h, look, lit) {
     g.save(); hairP(); g.clip(); g.strokeStyle = shade(col, .6); g.lineWidth = 3.5;
     for (const k of [-.3, -.1, .15, .35]) { g.beginPath(); g.moveTo(w * k * .4, -h * .5); g.quadraticCurveTo(w * k, -h * .42, w * k * 1.3, -h * .12); g.stroke(); }
     g.restore(); g.strokeStyle = PLUM; g.lineWidth = OUT - 1; hairP(); g.stroke();
+  } else if (kind === 'bowler' || kind === 'top') {   // a derby / a top hat
+    const col = look.hatColor || '#4a3a5a', top = kind === 'top', by = -h * .4, ch = top ? h * .78 : h * .42;
+    const crown = () => { g.beginPath();
+      if (top) { g.moveTo(-w * .3, by); g.lineTo(-w * .33, by - ch); g.quadraticCurveTo(0, by - ch - h * .05, w * .33, by - ch); g.lineTo(w * .3, by); g.closePath(); }
+      else { g.moveTo(-w * .36, by); g.bezierCurveTo(-w * .38, by - ch * 1.3, w * .38, by - ch * 1.3, w * .36, by); g.closePath(); } };
+    shaded(g, crown, { cx: 0, cy: by - ch / 2, w: w * .72, h: ch }, shade(col, 1.3), shade(col, .8), { lit, blur: 12, push: .16, lift: .12 });
+    g.save(); crown(); g.clip(); g.fillStyle = look.hatBand || shade(col, .55); g.fillRect(-w * .4, by - h * .14, w * .8, h * .1); g.restore();
+    g.strokeStyle = PLUM; g.lineWidth = OUT - 1; crown(); g.stroke();
+    g.fillStyle = shade(col, 1.05); g.beginPath(); g.ellipse(0, by, w * (top ? .5 : .5), h * .07, 0, 0, 6.29); g.fill(); g.stroke();
+  } else if (kind === 'beret') {                      // a flat beret with a stalk, tilted
+    const col = look.hatColor || '#c8323a';
+    const b = () => { g.beginPath(); g.ellipse(w * .08, -h * .5, w * .5, h * .17, -.12, 0, 6.29); };
+    shaded(g, b, { cx: w * .08, cy: -h * .5, w: w, h: h * .34 }, shade(col, 1.15), shade(col, .7), { lit, blur: 10, push: .14, lift: .1 });
+    g.strokeStyle = PLUM; g.lineWidth = OUT - 1; b(); g.stroke();
+    g.fillStyle = shade(col, .8); g.beginPath(); g.roundRect(w * .04, -h * .72, 12, 22, 4); g.fill(); g.stroke();
   }
 }
 
@@ -456,6 +495,17 @@ export class Toon {
       mitten(g, h[0], h[1], s);
     }
     this.hands = { L: hL, R: hR }; this.shY = sh;
+    if (L.scarf) {                                                             // a scarf: a band at the neck and a tail on the lit side
+      g.fillStyle = L.scarf; g.strokeStyle = PLUM; g.lineWidth = 6;
+      g.beginPath(); g.roundRect(cx - tw * .5, bodyTop - 6, tw, 40, 16); g.fill(); g.stroke();
+      g.beginPath(); g.roundRect(cx + 20, bodyTop + 20, 36, 120, 10); g.fill(); g.stroke();
+      g.strokeStyle = shade(L.scarf, .6); g.lineWidth = 4; for (let k = 0; k < 3; k++) { g.beginPath(); g.moveTo(cx + 22, bodyTop + 120 + k * 7); g.lineTo(cx + 54, bodyTop + 120 + k * 7); g.stroke(); }
+    }
+    if (L.bowtie) {                                                            // a bow tie under the chin
+      g.fillStyle = L.bowtie; g.strokeStyle = PLUM; g.lineWidth = 5;
+      for (const s of [-1, 1]) { g.beginPath(); g.moveTo(cx, bodyTop + 22); g.lineTo(cx + s * 38, bodyTop + 4); g.lineTo(cx + s * 38, bodyTop + 42); g.closePath(); g.fill(); g.stroke(); }
+      g.beginPath(); g.arc(cx, bodyTop + 22, 10, 0, 6.29); g.fill(); g.stroke();
+    }
     // head
     g.save(); g.translate(cx, 200 + bob); g.rotate((p.tilt || 0) * D2R);
     const asym = clamp(p.look || 0, -1, 1) * .08, hv = this.hv ||= variation(L);

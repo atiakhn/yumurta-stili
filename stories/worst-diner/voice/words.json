@@ -1,0 +1,1000 @@
+{
+ "words": [
+  {
+   "word": "He",
+   "start": 0.032,
+   "end": 0.125
+  },
+  {
+   "word": "ate",
+   "start": 0.206,
+   "end": 0.368
+  },
+  {
+   "word": "at",
+   "start": 0.403,
+   "end": 0.461
+  },
+  {
+   "word": "the",
+   "start": 0.496,
+   "end": 0.566
+  },
+  {
+   "word": "worst",
+   "start": 0.624,
+   "end": 0.902
+  },
+  {
+   "word": "restaurant",
+   "start": 0.972,
+   "end": 1.378
+  },
+  {
+   "word": "in",
+   "start": 1.413,
+   "end": 1.471
+  },
+  {
+   "word": "town",
+   "start": 1.518,
+   "end": 1.773
+  },
+  {
+   "word": "every",
+   "start": 1.866,
+   "end": 2.098
+  },
+  {
+   "word": "day",
+   "start": 2.145,
+   "end": 2.272
+  },
+  {
+   "word": "for",
+   "start": 2.319,
+   "end": 2.423
+  },
+  {
+   "word": "ten",
+   "start": 2.481,
+   "end": 2.644
+  },
+  {
+   "word": "years.",
+   "start": 2.714,
+   "end": 3.027
+  },
+  {
+   "word": "The",
+   "start": 3.243,
+   "end": 3.359
+  },
+  {
+   "word": "soup",
+   "start": 3.417,
+   "end": 3.626
+  },
+  {
+   "word": "is",
+   "start": 3.684,
+   "end": 3.754
+  },
+  {
+   "word": "cold,",
+   "start": 3.824,
+   "end": 4.23
+  },
+  {
+   "word": "the",
+   "start": 4.394,
+   "end": 4.487
+  },
+  {
+   "word": "bread",
+   "start": 4.533,
+   "end": 4.708
+  },
+  {
+   "word": "is",
+   "start": 4.754,
+   "end": 4.812
+  },
+  {
+   "word": "hard,",
+   "start": 4.87,
+   "end": 5.16
+  },
+  {
+   "word": "and",
+   "start": 5.451,
+   "end": 5.59
+  },
+  {
+   "word": "the",
+   "start": 5.636,
+   "end": 5.706
+  },
+  {
+   "word": "waiter",
+   "start": 5.753,
+   "end": 6.008
+  },
+  {
+   "word": "sneezes",
+   "start": 6.078,
+   "end": 6.461
+  },
+  {
+   "word": "on",
+   "start": 6.519,
+   "end": 6.6
+  },
+  {
+   "word": "everything.",
+   "start": 6.728,
+   "end": 7.273
+  },
+  {
+   "word": "Across",
+   "start": 7.513,
+   "end": 7.884
+  },
+  {
+   "word": "the",
+   "start": 7.931,
+   "end": 8.001
+  },
+  {
+   "word": "street",
+   "start": 8.035,
+   "end": 8.302
+  },
+  {
+   "word": "is",
+   "start": 8.349,
+   "end": 8.419
+  },
+  {
+   "word": "the",
+   "start": 8.465,
+   "end": 8.535
+  },
+  {
+   "word": "best",
+   "start": 8.604,
+   "end": 8.836
+  },
+  {
+   "word": "restaurant",
+   "start": 8.918,
+   "end": 9.301
+  },
+  {
+   "word": "in",
+   "start": 9.336,
+   "end": 9.382
+  },
+  {
+   "word": "town,",
+   "start": 9.429,
+   "end": 9.742
+  },
+  {
+   "word": "with",
+   "start": 10.009,
+   "end": 10.183
+  },
+  {
+   "word": "white",
+   "start": 10.253,
+   "end": 10.497
+  },
+  {
+   "word": "tablecloths",
+   "start": 10.52,
+   "end": 11.1
+  },
+  {
+   "word": "and",
+   "start": 11.135,
+   "end": 11.205
+  },
+  {
+   "word": "a",
+   "start": 11.251,
+   "end": 11.275
+  },
+  {
+   "word": "line",
+   "start": 11.333,
+   "end": 11.553
+  },
+  {
+   "word": "out",
+   "start": 11.576,
+   "end": 11.693
+  },
+  {
+   "word": "the",
+   "start": 11.728,
+   "end": 11.797
+  },
+  {
+   "word": "door.",
+   "start": 11.832,
+   "end": 12.099
+  },
+  {
+   "word": "His",
+   "start": 12.321,
+   "end": 12.495
+  },
+  {
+   "word": "friends",
+   "start": 12.553,
+   "end": 12.867
+  },
+  {
+   "word": "beg",
+   "start": 12.925,
+   "end": 13.099
+  },
+  {
+   "word": "him.",
+   "start": 13.145,
+   "end": 13.273
+  },
+  {
+   "word": "\"Just",
+   "start": 13.503,
+   "end": 13.678
+  },
+  {
+   "word": "cross",
+   "start": 13.712,
+   "end": 13.956
+  },
+  {
+   "word": "the",
+   "start": 14.003,
+   "end": 14.072
+  },
+  {
+   "word": "street!\"",
+   "start": 14.107,
+   "end": 14.455
+  },
+  {
+   "word": "He",
+   "start": 14.673,
+   "end": 14.789
+  },
+  {
+   "word": "never",
+   "start": 14.859,
+   "end": 15.056
+  },
+  {
+   "word": "does.",
+   "start": 15.114,
+   "end": 15.404
+  },
+  {
+   "word": "Same",
+   "start": 15.682,
+   "end": 15.937
+  },
+  {
+   "word": "table,",
+   "start": 15.972,
+   "end": 16.39
+  },
+  {
+   "word": "same",
+   "start": 16.516,
+   "end": 16.795
+  },
+  {
+   "word": "cold",
+   "start": 16.841,
+   "end": 17.073
+  },
+  {
+   "word": "soup,",
+   "start": 17.131,
+   "end": 17.364
+  },
+  {
+   "word": "every",
+   "start": 17.557,
+   "end": 17.801
+  },
+  {
+   "word": "single",
+   "start": 17.848,
+   "end": 18.103
+  },
+  {
+   "word": "day.",
+   "start": 18.138,
+   "end": 18.37
+  },
+  {
+   "word": "And",
+   "start": 18.533,
+   "end": 18.684
+  },
+  {
+   "word": "if",
+   "start": 18.742,
+   "end": 18.8
+  },
+  {
+   "word": "the",
+   "start": 18.835,
+   "end": 18.904
+  },
+  {
+   "word": "soup",
+   "start": 18.951,
+   "end": 19.16
+  },
+  {
+   "word": "ever",
+   "start": 19.23,
+   "end": 19.392
+  },
+  {
+   "word": "comes",
+   "start": 19.45,
+   "end": 19.659
+  },
+  {
+   "word": "out",
+   "start": 19.706,
+   "end": 19.822
+  },
+  {
+   "word": "warm,",
+   "start": 19.868,
+   "end": 20.193
+  },
+  {
+   "word": "he",
+   "start": 20.359,
+   "end": 20.44
+  },
+  {
+   "word": "sends",
+   "start": 20.51,
+   "end": 20.742
+  },
+  {
+   "word": "it",
+   "start": 20.789,
+   "end": 20.858
+  },
+  {
+   "word": "back.",
+   "start": 20.893,
+   "end": 21.149
+  },
+  {
+   "word": "One",
+   "start": 21.382,
+   "end": 21.568
+  },
+  {
+   "word": "night,",
+   "start": 21.603,
+   "end": 21.823
+  },
+  {
+   "word": "a",
+   "start": 21.939,
+   "end": 22.009
+  },
+  {
+   "word": "new",
+   "start": 22.09,
+   "end": 22.206
+  },
+  {
+   "word": "cook",
+   "start": 22.276,
+   "end": 22.473
+  },
+  {
+   "word": "tries",
+   "start": 22.52,
+   "end": 22.752
+  },
+  {
+   "word": "to",
+   "start": 22.787,
+   "end": 22.833
+  },
+  {
+   "word": "fix",
+   "start": 22.891,
+   "end": 23.065
+  },
+  {
+   "word": "the",
+   "start": 23.123,
+   "end": 23.193
+  },
+  {
+   "word": "place.",
+   "start": 23.216,
+   "end": 23.599
+  },
+  {
+   "word": "Fresh",
+   "start": 23.732,
+   "end": 23.987
+  },
+  {
+   "word": "bread,",
+   "start": 24.033,
+   "end": 24.324
+  },
+  {
+   "word": "hot",
+   "start": 24.523,
+   "end": 24.72
+  },
+  {
+   "word": "soup,",
+   "start": 24.778,
+   "end": 25.022
+  },
+  {
+   "word": "a",
+   "start": 25.221,
+   "end": 25.291
+  },
+  {
+   "word": "little",
+   "start": 25.349,
+   "end": 25.546
+  },
+  {
+   "word": "parsley",
+   "start": 25.581,
+   "end": 25.964
+  },
+  {
+   "word": "on",
+   "start": 26.011,
+   "end": 26.081
+  },
+  {
+   "word": "top.",
+   "start": 26.127,
+   "end": 26.382
+  },
+  {
+   "word": "The",
+   "start": 26.595,
+   "end": 26.723
+  },
+  {
+   "word": "next",
+   "start": 26.758,
+   "end": 26.932
+  },
+  {
+   "word": "morning,",
+   "start": 27.001,
+   "end": 27.269
+  },
+  {
+   "word": "that",
+   "start": 27.327,
+   "end": 27.454
+  },
+  {
+   "word": "cook",
+   "start": 27.501,
+   "end": 27.663
+  },
+  {
+   "word": "is",
+   "start": 27.71,
+   "end": 27.779
+  },
+  {
+   "word": "fired.",
+   "start": 27.849,
+   "end": 28.221
+  },
+  {
+   "word": "By",
+   "start": 28.417,
+   "end": 28.568
+  },
+  {
+   "word": "who?",
+   "start": 28.626,
+   "end": 28.846
+  },
+  {
+   "word": "By",
+   "start": 29.049,
+   "end": 29.2
+  },
+  {
+   "word": "him.",
+   "start": 29.27,
+   "end": 29.502
+  },
+  {
+   "word": "He",
+   "start": 29.717,
+   "end": 29.856
+  },
+  {
+   "word": "owns",
+   "start": 29.926,
+   "end": 30.135
+  },
+  {
+   "word": "the",
+   "start": 30.181,
+   "end": 30.251
+  },
+  {
+   "word": "worst",
+   "start": 30.32,
+   "end": 30.599
+  },
+  {
+   "word": "restaurant",
+   "start": 30.68,
+   "end": 31.098
+  },
+  {
+   "word": "in",
+   "start": 31.133,
+   "end": 31.191
+  },
+  {
+   "word": "town.",
+   "start": 31.238,
+   "end": 31.539
+  },
+  {
+   "word": "He",
+   "start": 31.769,
+   "end": 31.885
+  },
+  {
+   "word": "also",
+   "start": 31.943,
+   "end": 32.152
+  },
+  {
+   "word": "owns",
+   "start": 32.222,
+   "end": 32.407
+  },
+  {
+   "word": "the",
+   "start": 32.442,
+   "end": 32.512
+  },
+  {
+   "word": "best",
+   "start": 32.582,
+   "end": 32.802
+  },
+  {
+   "word": "one,",
+   "start": 32.884,
+   "end": 33.174
+  },
+  {
+   "word": "right",
+   "start": 33.252,
+   "end": 33.414
+  },
+  {
+   "word": "across",
+   "start": 33.437,
+   "end": 33.716
+  },
+  {
+   "word": "the",
+   "start": 33.751,
+   "end": 33.82
+  },
+  {
+   "word": "street.",
+   "start": 33.844,
+   "end": 34.157
+  },
+  {
+   "word": "You",
+   "start": 34.353,
+   "end": 34.469
+  },
+  {
+   "word": "see,",
+   "start": 34.539,
+   "end": 34.713
+  },
+  {
+   "word": "every",
+   "start": 34.783,
+   "end": 35.015
+  },
+  {
+   "word": "couple",
+   "start": 35.073,
+   "end": 35.34
+  },
+  {
+   "word": "who",
+   "start": 35.363,
+   "end": 35.456
+  },
+  {
+   "word": "walks",
+   "start": 35.503,
+   "end": 35.735
+  },
+  {
+   "word": "past",
+   "start": 35.781,
+   "end": 36.002
+  },
+  {
+   "word": "that",
+   "start": 36.048,
+   "end": 36.176
+  },
+  {
+   "word": "dump",
+   "start": 36.257,
+   "end": 36.478
+  },
+  {
+   "word": "suddenly",
+   "start": 36.524,
+   "end": 36.815
+  },
+  {
+   "word": "thinks",
+   "start": 36.861,
+   "end": 37.082
+  },
+  {
+   "word": "the",
+   "start": 37.105,
+   "end": 37.174
+  },
+  {
+   "word": "fancy",
+   "start": 37.221,
+   "end": 37.511
+  },
+  {
+   "word": "place",
+   "start": 37.569,
+   "end": 37.778
+  },
+  {
+   "word": "is",
+   "start": 37.801,
+   "end": 37.859
+  },
+  {
+   "word": "worth",
+   "start": 37.906,
+   "end": 38.092
+  },
+  {
+   "word": "fifty",
+   "start": 38.161,
+   "end": 38.44
+  },
+  {
+   "word": "bucks",
+   "start": 38.486,
+   "end": 38.695
+  },
+  {
+   "word": "a",
+   "start": 38.73,
+   "end": 38.753
+  },
+  {
+   "word": "plate.",
+   "start": 38.8,
+   "end": 39.16
+  },
+  {
+   "word": "The",
+   "start": 39.251,
+   "end": 39.367
+  },
+  {
+   "word": "worse",
+   "start": 39.414,
+   "end": 39.623
+  },
+  {
+   "word": "this",
+   "start": 39.658,
+   "end": 39.785
+  },
+  {
+   "word": "one",
+   "start": 39.843,
+   "end": 39.983
+  },
+  {
+   "word": "gets,",
+   "start": 40.018,
+   "end": 40.308
+  },
+  {
+   "word": "the",
+   "start": 40.419,
+   "end": 40.512
+  },
+  {
+   "word": "better",
+   "start": 40.558,
+   "end": 40.732
+  },
+  {
+   "word": "that",
+   "start": 40.779,
+   "end": 40.906
+  },
+  {
+   "word": "one",
+   "start": 40.976,
+   "end": 41.104
+  },
+  {
+   "word": "looks.",
+   "start": 41.139,
+   "end": 41.452
+  },
+  {
+   "word": "So,",
+   "start": 41.702,
+   "end": 41.957
+  },
+  {
+   "word": "for",
+   "start": 42.038,
+   "end": 42.166
+  },
+  {
+   "word": "ten",
+   "start": 42.224,
+   "end": 42.398
+  },
+  {
+   "word": "years,",
+   "start": 42.468,
+   "end": 42.77
+  },
+  {
+   "word": "he",
+   "start": 42.902,
+   "end": 42.983
+  },
+  {
+   "word": "sits",
+   "start": 43.041,
+   "end": 43.261
+  },
+  {
+   "word": "there",
+   "start": 43.285,
+   "end": 43.436
+  },
+  {
+   "word": "every",
+   "start": 43.482,
+   "end": 43.703
+  },
+  {
+   "word": "day,",
+   "start": 43.749,
+   "end": 43.946
+  },
+  {
+   "word": "making",
+   "start": 44.063,
+   "end": 44.33
+  },
+  {
+   "word": "sure",
+   "start": 44.364,
+   "end": 44.504
+  },
+  {
+   "word": "it",
+   "start": 44.539,
+   "end": 44.597
+  },
+  {
+   "word": "stays",
+   "start": 44.631,
+   "end": 44.887
+  },
+  {
+   "word": "terrible.",
+   "start": 44.945,
+   "end": 45.456
+  },
+  {
+   "word": "Then,",
+   "start": 45.576,
+   "end": 45.89
+  },
+  {
+   "word": "a",
+   "start": 46.04,
+   "end": 46.109
+  },
+  {
+   "word": "famous",
+   "start": 46.191,
+   "end": 46.492
+  },
+  {
+   "word": "food",
+   "start": 46.55,
+   "end": 46.748
+  },
+  {
+   "word": "critic",
+   "start": 46.794,
+   "end": 47.038
+  },
+  {
+   "word": "walks",
+   "start": 47.096,
+   "end": 47.316
+  },
+  {
+   "word": "into",
+   "start": 47.351,
+   "end": 47.479
+  },
+  {
+   "word": "the",
+   "start": 47.537,
+   "end": 47.607
+  },
+  {
+   "word": "dump",
+   "start": 47.653,
+   "end": 47.874
+  },
+  {
+   "word": "by",
+   "start": 47.955,
+   "end": 48.094
+  },
+  {
+   "word": "mistake.",
+   "start": 48.152,
+   "end": 48.652
+  },
+  {
+   "word": "Next",
+   "start": 48.802,
+   "end": 49.034
+  },
+  {
+   "word": "morning,",
+   "start": 49.092,
+   "end": 49.359
+  },
+  {
+   "word": "the",
+   "start": 49.406,
+   "end": 49.475
+  },
+  {
+   "word": "headline:",
+   "start": 49.522,
+   "end": 49.998
+  },
+  {
+   "word": "\"So",
+   "start": 50.205,
+   "end": 50.403
+  },
+  {
+   "word": "bad,",
+   "start": 50.472,
+   "end": 50.693
+  },
+  {
+   "word": "it's",
+   "start": 50.751,
+   "end": 50.879
+  },
+  {
+   "word": "genius.",
+   "start": 50.948,
+   "end": 51.413
+  },
+  {
+   "word": "Five",
+   "start": 51.645,
+   "end": 51.912
+  },
+  {
+   "word": "stars.\"",
+   "start": 51.947,
+   "end": 52.353
+  },
+  {
+   "word": "Now",
+   "start": 52.586,
+   "end": 52.76
+  },
+  {
+   "word": "the",
+   "start": 52.818,
+   "end": 52.888
+  },
+  {
+   "word": "line",
+   "start": 52.934,
+   "end": 53.12
+  },
+  {
+   "word": "is",
+   "start": 53.143,
+   "end": 53.213
+  },
+  {
+   "word": "on",
+   "start": 53.259,
+   "end": 53.329
+  },
+  {
+   "word": "the",
+   "start": 53.364,
+   "end": 53.433
+  },
+  {
+   "word": "wrong",
+   "start": 53.48,
+   "end": 53.747
+  },
+  {
+   "word": "side",
+   "start": 53.816,
+   "end": 54.049
+  },
+  {
+   "word": "of",
+   "start": 54.083,
+   "end": 54.13
+  },
+  {
+   "word": "the",
+   "start": 54.176,
+   "end": 54.246
+  },
+  {
+   "word": "street.",
+   "start": 54.281,
+   "end": 54.652
+  }
+ ],
+ "duration": 54.974
+}
